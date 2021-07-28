@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package test;
+
+// this is a test enum
+message TestEnum {
+  // this is a oneof
+  oneof inner {
+    // this is item1
+    uint32 item1 = 1;
+
+    // this is item2
+    uint64 item2 = 2;
+  }
+}
